@@ -1,0 +1,36 @@
+# Normalize line endings for text files
+* text=auto
+
+# Unity YAML assets (important for merges/diffs)
+*.unity text
+*.prefab text
+*.asset text
+*.mat text
+*.anim text
+*.controller text
+*.overrideController text
+*.playable text
+*.shader text
+*.asmdef text
+*.meta text
+*.json text
+*.txt text
+*.md text
+
+# Common binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.psd binary
+*.fbx binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.mp4 binary
+*.mov binary
+*.dll binary
+*.so binary
+*.a binary
+*.bundle binary
+*.unitypackage binary
