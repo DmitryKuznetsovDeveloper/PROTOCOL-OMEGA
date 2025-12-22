@@ -6,7 +6,15 @@ namespace App
     {
         public override void InstallBindings()
         {
-            // Глобальные сервисы (позже добавим)
+            SceneFlowBind();
+        }
+
+        private void SceneFlowBind()
+        {
+            Container.Bind<ISceneLoader>().To<SceneLoader>().AsSingle();
+            Container.Bind<ISceneTransitionRequest>().To<SceneTransitionRequest>().AsSingle();
+            Container.Bind<SceneTransitionFlow>().AsSingle();
+            Container.Bind<ISceneNavigator>().To<SceneNavigator>().AsSingle();
         }
     }
 }
